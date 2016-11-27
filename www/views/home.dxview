@@ -1,0 +1,8 @@
+<div data-options="dxView : { name: 'home', title: 'Home' } " >
+    <div class="home-view dx-content-background"  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        
+        <div data-bind="dxButton: { text: 'Button1' , onClick: $root.testdecrypt}"></div>
+       <!-- <div data-bind="dxButton: { text: 'test_enc',onClick: $root.readdecrypt }"></div>-->
+        <div data-bind="dxButton: { text: 'decrypt_file' ,onClick: $root.decrypt_file}"></div>
+    </div>
+</div>

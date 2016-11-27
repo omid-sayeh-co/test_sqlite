@@ -1,0 +1,6 @@
+<div data-options="dxView : { name: 'directory', title: 'directory' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div data-bind="dxButton: { text: 'create_directory' ,onClick: $root.create_directory}"></div>
+        <div data-bind="dxButton: { text: 'download_file' ,onClick: $root.download_file}"></div>
+
+</div>

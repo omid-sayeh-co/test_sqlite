@@ -1,0 +1,48 @@
+<div data-options="dxView : { name: 'des', title: 'des' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <input type='file' accept='text/plain' onchange='openFile(event)'><br>
+        <input type='file' accept='text/plain' onchange='openFileout(event)'><br>
+        <div id='output'>
+            ...
+        </div>
+       <script>
+
+           var openFile = function (event) {
+               var input = event.target;
+               alert(input.files[0]);
+               var reader = new FileReader();
+
+               read_file = input.files[0];
+              // reader.onloadend = function (e) {
+               //    var text = new Uint8Array(e.target.result)
+                   //var text = reader.result;
+                  // var node = document.getElementById('output');
+                  // node.innerText = text;
+                   // console.log(reader.result.substring(0, 200));
+
+                   //var str = "E69FB7A368833459";
+                   //var bytes = [];
+                   //var charCode;
+
+                   //for (var i = 0; i < str.length; ++i) {
+                   //    charCode = str.charCodeAt(i);
+                   //   // bytes.push((charCode & 0xFF00) >> 8);
+                   //    bytes.push(charCode & 0xFF);
+                   //}
+                   //var des = new DES(bytes);
+                   //des.decrypt(e.target.result[i], 0, decrypted, 0);
+
+             //  };
+             //  reader.readAsArrayBuffer(input.files[0]);
+           };
+           var openFileout = function (event) {
+               var input = event.target;
+               alert(input.files[0]);
+               var reader = new FileReader();
+
+               write_file = input.files[0];
+  
+           };
+       </script>
+    </div>
+</div>
